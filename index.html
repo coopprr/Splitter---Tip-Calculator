@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.svg">
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Splitter | Tip Calculator App </title>
+</head>
+
+<body>
+  <div class="logo">
+    <img src="./images/logo.svg" alt="">
+  </div>
+  <div class="container">
+    <div class="left-section">
+
+      <div class="left-content1">
+        <div class="bill">
+          <p class="input-heading"> Bill </p>
+        </div>
+        <div class="amount">
+          <input class="input1" id="bill-amount" type="number" value="0" minlength="4" maxlength="8" required>
+        </div>
+      </div>
+
+      <div class="left-content2">
+        <div class="tip">
+          <p class="input-heading"> Select Tip % </p>
+        </div>
+        <div class="percents" id="tip">
+          <button class="percent1" id="percent-rate5" value="5"> <span> 5%</span> </button>
+          <button class="percent1" id="percent-rate10" value="10"> <span>10%</span> </button>
+          <button class="percent1" id="percent-rate15" value="15"> 15 <span>%</span> </button>
+          <button class="percent1" id="percent-rate25" value="25"> 25 <span>%</span> </button>
+          <button class="percent1" id="percent-rate50" value="50"> 50 <span>%</span> </button>
+          <div class="percent2">
+            <input class="input2" type="number" id="tip-rate" placeholder="Custom" value="1">
+          </div>
+        </div>
+      </div>
+      <div class="left-content3">
+        <div class="people">
+          <p class="input-heading"> Number of People </p>
+        </div>
+        <div class="number">
+          <input class="input3" id="noofpeople" type="number" placeholder="0" minlength="4" maxlength="8" value="1" required>
+        </div>
+      </div>
+    </div>
+    <div class="right-section">
+      <div class="right-content1">
+        <div class="sum1">
+          <div class="texts">
+            <p class="sum-tip"> Tip Amount </p>
+            <p class="person"> / person </p>
+          </div>
+          <div class="numbers">
+            <p class="sum-number" id="tip-result-screen"> </p>
+          </div>
+        </div>
+        <div class="sum2">
+          <div class="texts">
+            <p class="sum-tip"> Total Amount </p>
+          </div>
+          <div class="numbers">
+            <p class="sum-number" id="total-result-screen"></p>
+          </div>
+        </div>
+      </div>
+      <div class="right-content2">
+        <button type="button" class="reset" id="reset" onclick=""> RESET </button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Coded by <a href="https://github.com/coopprr" target="_blank">Giorgi Kuprashvili</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
